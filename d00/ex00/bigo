@@ -1,0 +1,4 @@
+>> O(n) time complexity, with speed related directly to the size of the input
+data set.
+>> O(1) space complexity, the amount of space used by the algorithm is the same
+no matter the size of the data. Parameter allocation size is not considered.

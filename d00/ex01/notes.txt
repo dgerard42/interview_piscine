@@ -1,0 +1,27 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    notes.txt                                          :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dgerard <marvin@42.fr>                     +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/04/24 13:09:13 by dgerard           #+#    #+#              #
+#    Updated: 2018/04/24 13:17:32 by dgerard          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+>>pick a pivot
+>>put all numbers less than pivot to the left of it
+>>mark the boundaries of section with start and end indexes
+>>exit consition from recursion is that there is only one element in the section
+
+quicksort	(a, start, end)
+{
+	if (start >= end)
+	{
+		quicksort(A, start, pivot index - 1)
+		quicksort(A, pivotindex + 1, end)
+	}
+	else
+		return;
+}
