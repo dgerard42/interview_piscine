@@ -23,6 +23,7 @@ struct s_node			*create_ring(char *ascii)
 	{
 		if (!(new_node = (struct s_node*)malloc(sizeof(struct s_node))))
 			return (NULL);
+		bzero(new_node, sizeof(struct s_node));
 		new_node->c = *ascii;
 		if (ring != NULL)
 		{

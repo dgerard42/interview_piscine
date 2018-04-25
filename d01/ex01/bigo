@@ -1,0 +1,4 @@
+>> O(n) time complexity - this function recursively traverses through the list
+	once.
+>> O(1) space complexity - this algorithm takes up the same amount of space no
+	matter the size of the input list, it does not allocate.
