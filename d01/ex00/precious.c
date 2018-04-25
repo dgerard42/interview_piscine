@@ -51,17 +51,15 @@ char			*precious(int *text, int size)
 	if (!(message = (char *)calloc(size, sizeof(char))))
 		return (NULL);
 	ring = create_ring(CS);
- 	// for (int j = 0; j < 200; j++)
-	// {
-	// 	printf("%c", ring->c);
-	// 	ring = ring->next;
-	//}
+	ring = ring->prev;
 	for (int i = 0; i < size; i++)
 	{
-		for (int x = 0; x < text[i]; x++)
+		for (int x = 0; x < text[i]; x++){
 			ring = ring->prev;
-		for (int y = -1; y > text[i]; y--)
+		}
+		for (int y = 0; y > text[i]; y--){
 			ring = ring->next;
+		}
 		message[i] = ring->c;
 	}
 	return (message);
