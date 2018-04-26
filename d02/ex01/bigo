@@ -1,0 +1,4 @@
+>> O(n^2) time complexity - for every element in the array, the algorithm must
+	traverse through itself, in worst case, fully through itself
+>> O(1) space complexity - same amount of space needed to traverse and swap
+	elems no matter the size of the struct array

@@ -1,0 +1,10 @@
+ORIGINAL ALGO:
+>> O(n^2) time complexity - for every element in the array, the algorithm must
+	traverse through itself once
+>> O(1) space complexity - same amount of space needed to traverse and swap
+	elems no matter the size of the list
+
+OPTIMIZED ALGO:
+>> O(n^2) worst case time complexity, O(n) for best case, with some improvement
+	on average case
+>> O(1) space complexity
