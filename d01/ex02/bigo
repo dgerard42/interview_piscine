@@ -1,0 +1,5 @@
+>> O(n) time complexity - even though it traverse through the source list twice,
+	once to make the stack and again to print the stack, the run time is still
+	directly related to the length of the input list
+>> O(n) space complexity - the size of the allocated stack is directly related
+	to the size of the input list

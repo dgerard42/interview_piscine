@@ -54,6 +54,8 @@ void			printReverseV2(struct s_node *lst)
 		push(whack, lst->word);
 		lst = lst->next;
 	}
+	push(whack, lst->word);
 	while (whack->item != NULL)
 		printf("%s ", ((struct s_item *)pop(whack))->word);
+	printf("\n");
 }

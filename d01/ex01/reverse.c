@@ -12,10 +12,15 @@
 
 #include "header.h"
 
-void			printReverse(struct s_node *lst)
+void			recurse(struct s_node *lst)
 {
 	if (lst->next != NULL)
-		printReverse(lst->next);
+		recurse(lst->next);
 	printf("%s ", lst->word);
-	//how the fuck to get newline?
+}
+
+void			printReverse(struct s_node *lst)
+{
+	recurse(lst);
+	printf("\n");
 }
