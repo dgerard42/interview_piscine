@@ -15,10 +15,10 @@ int main(void)
 	/*-------------------
 	launch your test here
 	--------------------*/
-	//printPlayers(players);
-	//printf("doing the quick sort...\n");
-	//quickSort(players);
-	//printPlayers(players);
+	printPlayers(players);
+	printf("doing the quick sort...\n");
+	quickSort(players);
+	printPlayers(players);
 
 	return (0);
 }
@@ -37,7 +37,7 @@ void printPlayers(struct s_player **players)
 
 struct s_player **genRandomPlayers(int n){
 	struct s_player **players;
-	char *names[] = { "Beatriz Leroy", "Fernando Fradin", "Claud Lannoy", "Heriberto Franceschi", "Joleen Olsen", "Zula Inesta", "Keturah Bidault", "Helaine Weibel", "Elba Corre", "Terisa Uberti", "Yoshie Taupin", "Hannah Hamza", "Enid Aubree", "Kimberlie Claudel", "Clora Tisserand", "Sadie Urbanek", "Pearlene Virot", "Monique Napolitano", "Madelene Ibouroi", "Richelle Arnal", "Mathilde Bernard", "Lolita Delamare", "Irina Oberle", "Delila Kayser", "Catrina Iglesias", "Louis Barbara", "Michel Willerval", "Freda Quennesson", "Lilli Quersin", "Marlene Nelson", "Coreen Triquet", "Lyda Gombert", "Cherilyn Zemouri", "Shawnee Kanza", "Pasty Witkowski", "Omar Theron", "Wilhelmina Valles", "Valery Stein", "Angelic Hell", "Bobby Ducrocq", "Holley Gillot", "Samatha Rogier", "Vina Wasser", "Lita Benali", "Jessica Habib", "Clelia Usan", "Marquitta Quetier", "Lynetta Kevin", "Alica Wallerand", "Stephaine Zoro", "Perla Julienne", "Alease Damiens", "Jeannie Erdmann", "Stella Abed", "Iraida Collet", "Josette Wasser", "Pasquale Khoury", "Gudrun Hagege", "Yee Der", "Jae Techer", "Lizbeth Vallon", "Kamilah Garde", "Van Queiroz", "Keena Grimaud", "Corinne Ordonneau", "Candyce Duthoit", "Claris Isard", "Annamaria Pochon", "Isabel Guen", "Misha Odiot", "Natalie Stoll", "Ralph Mike", "Josefa Taha", "Brandon Issert", "Meredith Uhmann", "Lilliana Naas", "Toi Nectoux", "Leeanne Espinasse", "Marcene Montana", "Maxine Lecerf", "Zachery Erdmann", "Nena Jourdan", "Waneta Gerardin", "Penney Moro", "Amelia Karam", "Mei Onfray", "Elodia Cauvin", "Jeanne Exposito", "Ladawn Uzan", "Lorina Farmer", "Rosalyn Westrelin", "Harriet Undostres", "Adrianne Guilloux", "Man Vassal", "Tamesha Soriano", "Logan Zurita", "Kathlyn Eschenbrenner", "Laverna Rousselot", "Manda Dore", "Shelba Gloaguen" };
+	char *names[] = { "Beatriz Leroy", "Fernando Fradin", "Claud Lannoy", "Heriberto Franceschi", "Joel Osteen", "Zula Inesta", "Keturah Bidault", "Helaine Weibel", "Elba Corre", "Terisa Uberti", "Yoshie Taupin", "Hannah Hamza", "Enid Aubree", "Kimberlie Claudel", "Clora Tisserand", "Sadie Urbanek", "Pearlene Virot", "Monique Napolitano", "Madelene Ibouroi", "Richelle Arnal", "Mathilde Bernard", "Lolita Delamare", "Irina Oberle", "Delila Kayser", "Catrina Iglesias", "Louis Barbara", "Michel Willerval", "Freda Quennesson", "Lilli Quersin", "Marlene Nelson", "Coreen Triquet", "Lyda Gombert", "Cherilyn Zemouri", "Shawnee Kanza", "Pasty Witkowski", "Omar Theron", "Wilhelmina Valles", "Valery Stein", "Angelic Hell", "Bobby Ducrocq", "Holley Gillot", "Samatha Rogier", "Vina Wasser", "Lita Benali", "Jessica Habib", "Clelia Usan", "Marquitta Quetier", "Lynetta Kevin", "Alica Wallerand", "Stephaine Zoro", "Perla Julienne", "Alease Damiens", "Jeannie Erdmann", "Stella Abed", "Iraida Collet", "Josette Wasser", "Pasquale Khoury", "Gudrun Hagege", "Yee Der", "Jae Techer", "Lizbeth Vallon", "Kamilah Garde", "Van Queiroz", "Keena Grimaud", "Corinne Ordonneau", "Candyce Duthoit", "Claris Isard", "Annamaria Pochon", "Isabel Guen", "Misha Odiot", "Natalie Stoll", "Ralph Mike", "Josefa Taha", "Brandon Issert", "Meredith Uhmann", "Lilliana Naas", "Toi Nectoux", "Leeanne Espinasse", "Marcene Montana", "Maxine Lecerf", "Zachery Erdmann", "Nena Jourdan", "Waneta Gerardin", "Penney Moro", "Amelia Karam", "Mei Onfray", "Elodia Cauvin", "Jeanne Exposito", "Ladawn Uzan", "Lorina Farmer", "Rosalyn Westrelin", "Harriet Undostres", "Adrianne Guilloux", "Man Vassal", "Tamesha Soriano", "Logan Zurita", "Kathlyn Eschenbrenner", "Laverna Rousselot", "Manda Dore", "Shelba Gloaguen" };
 
 	srand(time(NULL));
 	if (n <= 0 || n > 1000){

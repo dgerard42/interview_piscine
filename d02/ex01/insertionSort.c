@@ -30,6 +30,6 @@ void		insertionSort(struct s_player **players)
 {
 	for (int player = 0; players[player] != NULL; player++)
 		for (int lower = 0; lower <= player; lower++)
-			if (players[lower]->score > players[player]->score)
+			if (players[lower]->score < players[player]->score)
 				insertFront(players, player, lower);
 }
