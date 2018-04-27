@@ -1,0 +1,14 @@
+>> TIME COMPLEXITY: O(n log(n)) average, O(n^2) worst case - worst case occurs
+	if the pivot value which is selected is far from the median, is an outlier,
+	max or min
+	"The log n part comes from the fact that it's (at least ideally) breaking
+	the input in half at each iteration. Starting from N items, and breaking
+	those in half each time means that you're down to 1 item after log2(N)
+	iterations, at which point you obviously can't subdivide it any further. For
+	example, starting from, say, 128 items, you divide into groups of 64, 32,
+	16, 8, 4, 2, 1 items -- 7 iterations (and log2(128) = 7).
+	Each of those iterations scans through the entire array to partition it, so
+	you end up with O(log N) operations, each of which has O(n) complexity, for
+	O(n log n) overall complexity."
+>> SPACE COMPLEXITY: O(log(n)) recursion memory on stack. The function recurses
+	every time that it partitions the array.

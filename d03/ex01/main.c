@@ -12,14 +12,15 @@ int main(void)
 
 	for (int i = 0; i < len; i++){
 		arr[i] = i + 1;
+		// printf("%d ", arr[i]);
 	}
 	/*-------------------
 	launch your test here
 	--------------------*/
-//	struct s_node *root;
+	// struct s_node *root;
 
-//	root = createBST(arr, len);
-//	printBinaryTree(root);
+	// root = createBST(arr, len);
+	// printBinaryTree(root);
 
 	return (0);
 }
