@@ -36,4 +36,3 @@ struct s_node		*createBST(int *arr, int n, int max)
 {
 	*head_node;
 	recurse(head_node, arr, n, max)
-}

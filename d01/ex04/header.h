@@ -24,7 +24,7 @@ struct s_node {
 };
 
 struct s_queue {
-  struct s_node *first;
+	struct s_node *first;
 	struct s_node *last;
 };
 
