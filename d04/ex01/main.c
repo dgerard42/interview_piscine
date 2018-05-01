@@ -11,7 +11,7 @@ int main(int ac, char **av)
 	char *b;
 
 	if (ac == 4
-		&& (strcmp(av[2], "&") == 0 || strcmp(av[2], "|"))
+		&& (strcmp(av[2], "&") == 0 || strcmp(av[2], "|") == 0)
 		&& checkBinary(av[1]) && checkBinary(av[3])) {
 		a = av[1];
 		b = av[3];
@@ -22,6 +22,8 @@ int main(int ac, char **av)
 	/*-------------------
 	launch your test here
 	--------------------*/
+	// printf("HERE%s\n", a);
+	// printf("%s\n", b);
 	char *res;
 
 	if (strcmp(av[2], "&") == 0)
@@ -32,8 +34,6 @@ int main(int ac, char **av)
 
 	return (0);
 }
-
-
 
 // Function used for the test
 // Don't go further :)
@@ -52,3 +52,20 @@ int checkBinary(char *str) {
 		return (1);
 	return (0);
 }
+// int			main(void)
+// {
+// 	char *a;
+// 	char *b;
+// 	char *res;
+//
+// 	a = (char *)calloc(5, sizeof(char));
+// 	b = (char *)calloc(4, sizeof(char));
+// 	a[0] = '~';
+// 	for(int i = 1; i <= 4; i++)
+// 		a[i] = '0';
+// 	for(int i = 0; i < 4; i++)
+// 		b[i] = '1';
+// 	res = getAnd(a, b);
+// 	printf("RES%s\n", res);
+// 	return(0);
+// }
