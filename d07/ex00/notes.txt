@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    notes.txt                                          :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dgerard <marvin@42.fr>                     +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/05/04 13:31:34 by dgerard           #+#    #+#              #
+#    Updated: 2018/05/04 14:27:18 by dgerard          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+>> heap == ordered binary tree
+>> max heap == all parent nodes > all child nodes
+	>> create tree
+	>> make tree max heap
+		>> swap max number with the lowest number
+		>> remove the highest number from the tree
+		>> send new tree to heapify to sort the one out of place element
+
+>> start with the middle element in the array as the root node
+>> decrement from there
+>> you traverse / select root nodes in this pattern because it allows for the
+	sorted largest elements being moved to the end to be excluded
